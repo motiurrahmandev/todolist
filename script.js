@@ -45,7 +45,7 @@ function genarateTodos() {
 
 </li>`
 
-  })
+  });
   todoItems.innerHTML = finalTodo;
 }
 
