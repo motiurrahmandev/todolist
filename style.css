@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 60px;
+  width: 100%;
+  background-color: #FFB1B1;
+}
+
+.navbr .text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbr .text:hover {
+  color: rgb(45, 45, 205);
+}
+
+.navbr ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbr ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.navbr ul li:hover {
+  color: rgb(186, 109, 0)
+}
+
+.container {
+  width: 90vw;
+  background-color: #FFEAE3;
+  margin: auto;
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 5vw;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.input-box {
+  height: 35px;
+  width: 40%;
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.border {
+  border: 1.2px solid red;
+}
+
+.input button {
+  border-radius: 8px;
+  padding: 5px 20px;
+  height: 35px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #FFB1B1;
+}
+
+.input button:hover {
+  background-color: #f9bfbf;
+}
+
+
+.items li {
+  list-style: none;
+  height: 35px;
+  width: 47%;
+  padding: 5px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #FFB1B1;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items li span {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: #fbcfc1;
+  cursor: pointer;
+}
+
+.items li span:hover {
+  background-color: #efe6e4;
+}
+
+.items .checked {
+  color: #be8f8f;
+  text-decoration: line-through;
+}
+
+.navbr i {
+  display: none;
+}
+
+@media screen and (Max-width:991px) {
+  .navbr i {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .navbr ul {
+    display: none;
+  }
+
+  .input-box {
+    width:60%;
+  }
+  
+  .input{
+    padding-top: 30px;
+  }
+
+  .items li {
+    width: 70%;
+  }
+  .container{
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .items li {
+    width: 70%;
+  }
+  .input-box{
+    width: 55%;
+  }
+}
+@media screen and (max-width:487px) {
+  .items li {
+    width: 95%;
+  }
+  .input-box{
+    width: 70%;
+  }
+  .items li span{
+    font-size: 0.8rem;
+  }
+}
