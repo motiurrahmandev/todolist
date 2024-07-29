@@ -4,7 +4,7 @@ const todoItems = document.querySelector(".items");
 
 addBtn.addEventListener("click", () => {
   creatTodo();
-})
+});
 
 const creatTodo = () => {
   if (inputBox.value === "") {
@@ -13,11 +13,11 @@ const creatTodo = () => {
     let todos = inputBox.value;
     inputBox.value = "";
     addTodo(todos);
-  }
+  };
   inputBox.addEventListener("click", () => {
     inputBox.classList.remove("border");
-  })
-}
+  });
+};
 
 let data = JSON.parse(localStorage.getItem('data'));
 
@@ -27,7 +27,7 @@ function addTodo(todos) {
 
   localStorage.setItem("data", JSON.stringify(data));
   genarateTodos();
-}
+};
 
 
 
@@ -47,19 +47,19 @@ function genarateTodos() {
 
   });
   todoItems.innerHTML = finalTodo;
-}
+};
 
-genarateTodos()
+genarateTodos();
 
 function deleteTodo(e) {
   e.parentElement.parentElement.remove();
   data.splice(e.parentElement.parentElement.id,1);
   localStorage.setItem("data", JSON.stringify(data));
-}
+};
 
 function editTodo(e) {
   inputBox.value =e.parentElement.previousElementSibling.innerHTML;
   e.parentElement.parentElement.remove();
   data.splice(e.parentElement.parentElement.id,1);
   localStorage.setItem("data", JSON.stringify(data));
-}
+};
