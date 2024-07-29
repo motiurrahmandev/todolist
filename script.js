@@ -20,14 +20,10 @@ const creatTodo = () => {
 }
 
 let data = JSON.parse(localStorage.getItem('data'));
-// if (data==='') {
-//   data = ['motiur', 'rahman']
-// }
 
 function addTodo(todos) {
 
   data.push(todos);
-  console.log(data);
 
   localStorage.setItem("data", JSON.stringify(data));
   genarateTodos();
