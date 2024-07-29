@@ -49,7 +49,7 @@ function genarateTodos() {
   todoItems.innerHTML = finalTodo;
 }
 
-genarateTodos();
+genarateTodos()
 
 function deleteTodo(e) {
   e.parentElement.parentElement.remove();
