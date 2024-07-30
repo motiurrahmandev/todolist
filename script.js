@@ -47,7 +47,7 @@ function genarateTodos() {
 
   });
   todoItems.innerHTML = finalTodo;
-};
+}
 
 genarateTodos();
 
@@ -55,11 +55,11 @@ function deleteTodo(e) {
   e.parentElement.parentElement.remove();
   data.splice(e.parentElement.parentElement.id,1);
   localStorage.setItem("data", JSON.stringify(data));
-};
+}
 
 function editTodo(e) {
   inputBox.value =e.parentElement.previousElementSibling.innerHTML;
   e.parentElement.parentElement.remove();
   data.splice(e.parentElement.parentElement.id,1);
   localStorage.setItem("data", JSON.stringify(data));
-};
+}
