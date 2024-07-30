@@ -32,8 +32,8 @@ function addTodo(todos) {
 
 
 
-function genarateTodos() {
   let finalTodo = '';
+function genarateTodos() {
   data.forEach((todos, i) => {
     finalTodo += ` <li id=${i}>
   <input type="checkbox"  />
